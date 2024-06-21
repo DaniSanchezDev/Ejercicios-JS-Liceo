@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Number</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <h1>Guess Number</h1>
+    <p id="message"></p>
+    <form action="" id="numberForm">
+      <input
+        type="number"
+        name="userNumber"
+        id="numberInput"
+        placeholder="Enter a number"
+        min="1"
+      />
+      <button type="submit" id="submitNumber">Submit</button>
+      <button type="submit" id="submitNewNumber">New number</button>
+    </form>
+    <h2>List of attempts:</h2>
+    <ul id="attemptsList"></ul>
+    <h2>Options:</h2>
+    <form id="optionsForm">
+      <label for="easy">
+        <input type="radio" name="option" id="easy" value="easy" checked/>
+        1 - 10 (3 attempts)
+    </label>
+    <label for="medium">
+        <input type="radio" name="option" id="medium" value="medium" />
+        1 - 50 (5 attempts)
+    </label>
+        <button type="submit" id="submitOption">Select Option</button>
+    </form>
+  </body>
+</html>
