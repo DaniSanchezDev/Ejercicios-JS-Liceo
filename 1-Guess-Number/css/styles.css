@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #newNumberButton {
+    display: none;
+  }
+  
+  #bottomContainer {
+    display: flex;
+  }
+  
+  #attemptsContainer {
+    margin-right: 50px;
+  }
+  
+  #optionContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 20px;
+  }
+  
