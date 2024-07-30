@@ -26,9 +26,15 @@ turn = generateRandomNumer(1,2);
 
 messageText.innerText = turn === PLAYER_1 ? 'Player 1 (X)' : 'Player 2 (0)';
 
+const changeTurn = () => {
+    turn = turn === PLAYER_1 ? PLAYER_2 : PLAYER_1;
+}
+
 const clickCell = event => {
+    const id = event.target.id;
     const [ , row, column] = event.target.id.split('_');
     board [row][column] = turn;
+    document.getElementById(id).src = turn === PLAYER_1 ? PLAYER_1_IMAGE : PLAYER_2_IMAGE;
     
 };
 
