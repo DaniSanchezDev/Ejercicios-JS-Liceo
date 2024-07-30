@@ -26,5 +26,13 @@ turn = generateRandomNumer(1,2);
 
 messageText.innerText = turn === PLAYER_1 ? 'Player 1 (X)' : 'Player 2 (0)';
 
+const clickCell = event => {
+    const [ , row, column] = event.target.id.split('_');
+    board [row][column] = turn;
+    
+};
+
+Array.from(images).forEach(image => (image.onClick = clickCell));
+
 
 
